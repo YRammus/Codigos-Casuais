@@ -8,7 +8,7 @@ for i in lista:
     i = i.upper()
     word_list.append(i)
     c += 1
-# Generate a random list of words
+# Generate the image of a "body"
 def get_body(body, chance):
     if chance < 6:
         print(body[0])
@@ -24,7 +24,7 @@ def get_body(body, chance):
         print(body[5])
         print("\n YOU KILL THIS MAN")
         return
-    
+
 def print_quest(question):
     for i in question:
         print(i, end=" ")
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     kick_answer = [i for i in answer]
     game(answer, kick_answer, [])
     while(True):
-        gamer =input("Você quer jogar de novo?")
+        gamer =input("VocÃª quer jogar de novo?")
         if gamer == "s":
             
             a = random.randint(1, c-1)
